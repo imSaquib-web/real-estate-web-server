@@ -9,6 +9,15 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/users", userRouter);
 app.use("/api/properties", PropertyRouter);
+import cors from "cors";
+
+app.use(
+  cors({
+    origin: "https://real-estate-web-client-juh1iviov-imsaquib-webs-projects.vercel.app/",
+    credentials: true,
+  })
+);
+
 
 app.get("/", (req, res) => {
   res.send("runningggggggg.......");
