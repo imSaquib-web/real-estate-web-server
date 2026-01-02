@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/users", userRouter);
 app.use("/api/properties", PropertyRouter);
-import cors from "cors";
+// import cors from "cors";
 
 app.use(
   cors({
